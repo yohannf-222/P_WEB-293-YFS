@@ -1,4 +1,51 @@
 *{
-   font-family: Verdana;
- }
- 
+    padding: 0px;
+    font-family: Helvetica;
+}
+body{
+    background: #44444E;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #D3DAD9;        
+}
+
+p {
+    color: #D3DAD9;
+    opacity: 85%;
+}
+
+.navLink {
+    color: #A48686;
+}
+
+nav {
+    display: flex;    
+    flex-direction:row;
+    justify-content: space-between;     
+    align-items:center;  
+
+    nav h1, p, a 
+    {
+        margin-right:2%;
+        margin-left: 2%;
+        margin-top: 1.5%;
+        margin-bottom: 1.5%;
+    }
+    nav p 
+    {
+        flex-grow: 1; 
+    }
+    nav a 
+    {
+        text-decoration: none;
+    }
+}
+
+.callToActLink{
+    color: #A48686;
+}
+
+.invertedLink{
+    color: #A48686;
+}
