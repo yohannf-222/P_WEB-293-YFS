@@ -6,15 +6,20 @@
         <meta name="description" content ="La page d'accueil, pousse l'observateur à aller voir les autres pages">
         <link rel="stylesheet" type="text/css" href="style.css">
         <title>Accueil</title>
+
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
 
             <nav><!--Contient le logo SPERANZA sous forme de texte majuscule et les liens "Contact" et "Codex"-->
                 <div>
-                    <h1 class="titre-logo">SPERANZA</h1>
+                    <h1>SPERANZA</h1>
                 </div>
-                <div>
+                <div class="topLinks">
                     <a class="navLink" href="contact.html">Contact</a>
                     <a class="navLink" href="enlist.html">S'engager</a>
                     <a class="navLink" href="codex.html">Codex</a>
@@ -22,18 +27,19 @@
             </nav>
         </header>
         <main><!--Le contenu de la page, des blocs imagés menant aux autres pages-->
-            <div><!--Titre de la page d'accueil-->
+            <div class="Title"><!--Titre de la page d'accueil-->
                 <h1>La ville capitale</h1>
                 <p>Site du département de la sécurité.</p>
-                <a class="callToActLink" href="enlist.html">Devenir raider</a>
-                <a class="invertedLink" href="contact.html">Contact</a>
-            </div>            
-            <img src="images/plan-ville.png" alt="Un plan sur la ville de speranza">      
+                <div>
+                    <a class="callToActLink" href="enlist.html">Devenir raider</a>
+                    <a class="invertedLink" href="contact.html">Contact</a>
+                </div>
+            </div>                        
 
             <div><!--Titre et image menant à l'encyclopédie-->
                 <div>
                     <h2>Les dangers de la surface</h2>
-                    <p>Tout ce qu’ily a à savoir avant de s’y aventurer.</p>
+                    <p>Tout ce qu’il y a à savoir avant de s’y aventurer.</p>
                     <a class="callToActLink" href="codex.html">Codex</a>
                 </div>
                 <div>

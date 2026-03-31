@@ -1,9 +1,9 @@
 *{
-    padding: 0px;
-    font-family: Helvetica;
+    font-family: Helvetica, "Roboto", sans-serif;
 }
 body{
     background: #44444E;
+    margin:0em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -15,31 +15,8 @@ p {
     opacity: 85%;
 }
 
-.navLink {
-    color: #A48686;
-}
-
-nav {
-    display: flex;    
-    flex-direction:row;
-    justify-content: space-between;     
-    align-items:center;  
-
-    nav h1, p, a 
-    {
-        margin-right:2%;
-        margin-left: 2%;
-        margin-top: 1.5%;
-        margin-bottom: 1.5%;
-    }
-    nav p 
-    {
-        flex-grow: 1; 
-    }
-    nav a 
-    {
-        text-decoration: none;
-    }
+a {
+    text-decoration: none;
 }
 
 .callToActLink{
@@ -47,5 +24,42 @@ nav {
 }
 
 .invertedLink{
+    color: #BFC6C4;
+}
+
+.navLink {
     color: #A48686;
+}
+
+.topLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width:40%;
+}
+
+nav {
+    display: flex;    
+    flex-direction: row;
+    justify-content: space-between;     
+    align-items: center;      
+
+    background-color: #44444E;
+
+    padding: 0% 2%;        
+
+    .navLink
+    {           
+        margin: 0% 5%;     
+    }
+}
+
+.Title {
+    background-image: url('images/plan-ville.png');
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
 }
