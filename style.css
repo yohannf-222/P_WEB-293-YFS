@@ -3,11 +3,15 @@
 }
 body{
     background: #44444E;
-    margin:0em;
+    margin: 0em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h4, h5, h6 {
     color: #D3DAD9;        
+}
+
+h3 {
+    color:#A48686 
 }
 
 p {
@@ -17,19 +21,24 @@ p {
 
 a {
     text-decoration: none;
+    color: #A48686;
+}
+
+ol {
+    color: #D3DAD9;
 }
 
 .callToActLink, .invertedcallToActLink {
     color: #BFC6C4;
     border-radius: 1em;
-    padding: 0.6em 0.5em ;
+    padding: 0.6em 0.5em;
 }
 
-.callToActLink{    
+.callToActLink {    
     background-color: #A48686;    
 }
 
-.invertedcallToActLink{    
+.invertedcallToActLink {    
     border-color: #BFC6C4;
     border-width: 1px;
 }
@@ -63,7 +72,9 @@ nav {
 }
 
 .title {
-    background-image: url('images/plan-ville.png');
+    background-image: url('images/plan-ville2.jpeg');
+    background-size: cover;
+
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -81,6 +92,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     padding: 0.5em 0.5em;
 
     .content , .image{
@@ -88,5 +100,27 @@ nav {
         justify-content: center;
         align-items: center;     
     }
+    .blocImage {
+        padding:2em;
+    }
+    .blocImage > img {
+        border-radius: 1em;
+    }
+}
 
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em 2em;
+
+    .footerContent {        
+        margin: 2em 2em;
+    }
+
+    .footerLinks {
+        display:flex;
+        justify-content: space-around;
+        margin: 1em 1em;
+    }
 }
