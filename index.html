@@ -9,82 +9,97 @@
 
         <!--Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
 
             <nav><!--Contient le logo SPERANZA sous forme de texte majuscule et les liens "Contact" et "Codex"-->
-                <div>
-                    <h1>SPERANZA</h1>
+                <div id="logo">
+                    <h2>SPERANZA</h2>
                 </div>
                 <div class="topLinks">
-                    <a class="navLink" href="contact.html">Contact</a>
-                    <a class="navLink" href="enlist.html">S'engager</a>
                     <a class="navLink" href="codex.html">Codex</a>
+                    <a class="navLink" href="enlist.html">S'engager</a>
+                    <a class="navLink" href="contact.html">Contact</a>
                 </div>
-            </nav>
+            </nav>            
         </header>
+        
         <main><!--Le contenu de la page, un bloc titre et 2 blocs imagés menant aux autres pages-->
             <div class="title"><!--Titre de la page d'accueil-->
                 <h1>La ville capitale</h1>
                 <p>Site du département de la sécurité.</p>
                 <div class="titleLinks">
                     <a class="callToActLink" href="enlist.html">Devenir raider</a>
-                    <a class="invertedcallToActLink" href="contact.html">Contact</a>
+                    <a class="semiTransparentLink" href="contact.html">Contact</a>
                 </div>
             </div>
 
             <div class="bloc"><!--Titre et image menant à l'encyclopédie-->
+
                 <div class="content">
                     <h2>Les dangers de la surface</h2>
                     <p>Tout ce qu’il y a à savoir avant de s’y aventurer.</p>
                     <a class="callToActLink" href="codex.html">Codex</a>
                 </div>
-                <div class="blocImage">
-                     <img width="100%" src="images/Leaper.png" alt="Une personne fuyant un bondisseur">
-                </div>
+
+                 <img  class="blocImage" src="images/leaper2.jpg" alt="Un bondisseur attaquant une personne">
+
             </div>
 
             <div class="bloc"><!--Descriptif du département de la sécurité et image-->
-                <div class="blocImage">
-                     <img width="100%" src="images/Shani.png" alt="La directrice du département de la sécurité en plein travail.">
-                </div>               
+
+                <img class="blocImage" src="images/Shani.png" alt="La cheffe du département de la sécurité en plein travail.">
+                           
                 <div class="content">
                     <h2>Sécurité</h2>
-                    <p>L'objectif des raiders est de récolter les ressources nécessaires à la survie de la ville.</p>
-                    <p>Le notre est la survie de ces raiders afin de maintenir la ville à flot.</p>
+                    <p>L'objectif des raiders est de récolter les ressources nécessaires à la ville.</p>
+                    <p>Le notre est de la maintenir en sécurité.</p>
                     <a class="callToActLink" href="contact.html">Contact</a>
                 </div>
             </div>
-        </main>
-        <footer><!--descriptif très bref et quelques liens -->
+        </main>                
+
+        <footer><!--descriptif très bref du département et quelques liens -->    
+            <div class="FooterLimit">
+                <hr id="FooterLimitLine">
+            </div>                    
+
             <div>
                 <div class="footerContent">
-                    <h3>Sécurité</h3>
-                    <p>Nous maintenons l'humanité en vie</p>
+                    <h3>&copy; Département de sécurité</h3>
+                    <p>Notre objectif ? Votre sécurité.</p>                                                         
                 </div>      
             </div>
 
             <div class="footerLinks">
-                <div class="footerCodexLink">
-                    <a href="codex.html">Codex :</a>
-                    <ol>
-                        <li>Bondisseur</li>
-                        <li>Bombardier</li>
-                        <li>déchiqueteur</li>
-                        <li>Autres...</li>
+                <div id="footerCodexLink">
+                    <a class="FooterLinks" href="codex.html">Codex :</a>
+                    <ol class="whiteFooterLinks">
+                        <li>
+                            <a href="codex.html">Bondisseur</a>
+                        </li>
+                        <li>
+                            <a href="codex.html">Bombardier</a>
+                        </li>
+                        <li>
+                            <a href="codex.html">Déchiqueteurs</a>
+                        </li>
+                        <li>
+                            <a href="codex.html">Autres...</a>
+                        </li>
                     </ol>
                 </div>
+                
                 <div class="footerSupport">
                     <h4>Support</h4>                                        
-                    <a href="contact.html">Contact</a>                        
-                    <a href="support.html">Support</a>                       
-                    <a href="mentions-legales.html">Mentions légales</a>                                                                                 
+                    <a class="FooterLinks" href="contact.html">Contact</a>                        
+                    <a class="FooterLinks" href="support.html">Support</a>                       
+                    <a class="FooterLinks" href="mentions-legales.html">Mentions légales</a>                                                                                 
                 </div>   
             </div>
-
         </footer>
     </body>
 </html>
