@@ -20,15 +20,21 @@
                     <h2>SPERANZA</h2>
                 </div>
                 <div class="topLinks">
-                    <a class="navLink" href="codex.html">Codex</a>
-                    <a class="navLink" href="enlist.html">S'engager</a>
-                    <a class="navLink" href="contact.html">Contact</a>
+                    <div>
+                        <a class="navLink" href="codex.html">Codex</a>
+                    </div>
+                    <div>
+                        <a class="navLink" href="enlist.html">S'engager</a>
+                    </div>
+                    <div>
+                        <a class="navLink" href="contact.html">Contact</a>
+                    </div>
                 </div>
             </nav>            
         </header>
         
         <main><!--Le contenu de la page, un bloc titre et 2 blocs imagés menant aux autres pages-->
-            <div class="title"><!--Titre de la page d'accueil-->
+            <div id="indexTitle" class="title"><!--Titre de la page d'accueil-->
                 <h1>La ville capitale</h1>
                 <p>Site du département de la sécurité.</p>
                 <div class="titleLinks">
@@ -37,7 +43,8 @@
                 </div>
             </div>
 
-            <div class="bloc"><!--Titre et image menant à l'encyclopédie-->
+           
+            <section><!--Titre et image menant à l'encyclopédie-->
 
                 <div class="content">
                     <h2>Les dangers de la surface</h2>
@@ -45,27 +52,34 @@
                     <a class="callToActLink" href="codex.html">Codex</a>
                 </div>
 
-                 <img  class="blocImage" src="images/leaper2.jpg" alt="Un bondisseur attaquant une personne">
+                <div>
+                    <img  class="blocImage" src="images/leaper2.jpg" alt="Un bondisseur attaquant une personne">
+                </div>
 
-            </div>
+            </section> 
 
-            <div class="bloc"><!--Descriptif du département de la sécurité et image-->
+            <section><!--Descriptif du département de la sécurité et image-->
 
-                <img class="blocImage" src="images/Shani.png" alt="La cheffe du département de la sécurité en plein travail.">
-                           
+                <div>
+                    <img class="blocImage" src="images/Shani.png" alt="La cheffe du département de la sécurité en plein travail.">
+                </div>
+                        
                 <div class="content">
                     <h2>Sécurité</h2>
                     <p>L'objectif des raiders est de récolter les ressources nécessaires à la ville.</p>
                     <p>Le notre est de la maintenir en sécurité.</p>
                     <a class="callToActLink" href="contact.html">Contact</a>
                 </div>
-            </div>
+
+            </section>
+
+                       
         </main>                
 
         <footer><!--descriptif très bref du département et quelques liens -->    
             <div class="FooterLimit">
                 <hr id="FooterLimitLine">
-            </div>                    
+            </div>                
 
             <div>
                 <div class="footerContent">
@@ -76,8 +90,8 @@
 
             <div class="footerLinks">
                 <div id="footerCodexLink">
-                    <a class="FooterLinks" href="codex.html">Codex :</a>
-                    <ol class="whiteFooterLinks">
+                    <a class="FooterLinks" href="codex.html">Codex :</a>                   
+                    <ul class="whiteFooterLinks">
                         <li>
                             <a href="codex.html">Bondisseur</a>
                         </li>
@@ -90,15 +104,21 @@
                         <li>
                             <a href="codex.html">Autres...</a>
                         </li>
-                    </ol>
+                    </ul>
                 </div>
                 
                 <div class="footerSupport">
-                    <h4>Support</h4>                                        
-                    <a class="FooterLinks" href="contact.html">Contact</a>                        
-                    <a class="FooterLinks" href="support.html">Support</a>                       
-                    <a class="FooterLinks" href="mentions-legales.html">Mentions légales</a>                                                                                 
-                </div>   
+                    <h4>Support</h4> 
+                    <div>
+                        <a class="FooterLinks" href="contact.html">Contact</a> 
+                    </div>
+                    <div>
+                        <a class="FooterLinks" href="support.html">Support</a> 
+                    </div>
+                    <div>
+                        <a class="FooterLinks" href="mentions-legales.html">Mentions légales</a>  
+                    </div>                                                                      
+                </div>  
             </div>
         </footer>
     </body>
