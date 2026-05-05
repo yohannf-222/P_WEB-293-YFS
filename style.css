@@ -26,9 +26,23 @@ p {
     opacity: 85%;
 }
 
+span {
+    color: #D3DAD9;
+    opacity: 85%;
+}
+
+label {
+    color: #D3DAD9;
+    opacity: 85%;
+}
+
 a {
     text-decoration: none;
     color: #A48686;
+}
+
+strong {
+    color: #A48686;  
 }
 
 ol {
@@ -114,6 +128,27 @@ nav {
     background-image: url('images/background2.jpg');
 
     padding: 14em 2em ;    
+}
+
+#EnlistTitle {
+    background-image: url('images/EnlistTitleImage.webp');
+
+    padding: 22em 2em ;   
+}
+
+#EnlistTitle h1 {
+    border-radius: 0.35em;
+    padding: 1px 8px;
+    background-color: #44444e9b;
+    margin: 0px;
+    margin-bottom: 13px;
+}
+
+#EnlistTitle h2 {
+    border-radius: 0.35em;
+    padding: 12px 10px;
+    background-color: #44444e9b;
+    margin: 10px;
 }
 
 #codexTitle h1 {
@@ -240,4 +275,9 @@ img {
 
 :hover > a {
     color: #ffffff;
+}
+
+form {
+    display: flex;
+
 }

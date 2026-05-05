@@ -8,7 +8,7 @@
     </head>
     <body>
          <header>
-            <nav><!--Contient le logo SPERANZA sous forme de texte majuscule et les liens "Contact" et "Codex"-->
+            <nav><!--Contient le logo SPERANZA sous forme de texte majuscule et les liens "Auteur" et "Codex"-->
                 <div>
                     <h2>SPERANZA</h2>
                 </div>
@@ -20,42 +20,162 @@
                         <a class="navLink" href="codex.html">Codex</a>
                     </div>
                     <div>
-                        <a class="navLink" href="contact.html">Contact</a>
+                        <a class="navLink" href="Auteur.html">Auteur</a>
                     </div>
                 </div>
             </nav>
-        </header>
+        </header>        
+        
         <main>
+            </div> 
+                <div id="EnlistTitle" class="title"><!--Le titre principal de l'enciclopédie-->
+                <h1>Cessez de rêver</h1>
+                <h2>Devenez un raider.</h2>                
+            </div>
+
+            <section><!---->
+                <div>
+                    <img class="blocImage" src="images/EnlistingPresentation2.jpg" alt="">
+                </div>
+                        
+                <div class="content">
+                    <h2>Les Raiders</h2>
+                    <p>Ces personnes sont les <strong>HEROS</strong> qui maintiennent l'humanité en vie, et <strong>VOUS</strong> pouvez en faire partie.</p>                    
+                    <p>Leur mission est de se rendre à la surface (oui vraiment) et de récupérer des ressources.</p>
+                    <p>Ils sont également les soldats qui tiennent le front contre l'arc.</p>
+                    <p>Accessoirement, il s'agit aussi du seul moyen de voir la lumière du jour.</p>
+                </div>
+            </section>
+
+            <section><!--Description et conseils, Bondisseur-->
+                <div class="content">
+                    <h2>Le Formulaire</h2>
+                    <p>Le formulaire qui suit sera directement envoyé à une équipe du département de la Sécurité.</p>
+                    <p>Si votre candidature est complète, vous recevrez directement une lettre qui vous invite à vous rendre au camp d'entrainement.</p>
+                    <p>Après avoir fini votre entrainement, vous pourrez vous faire équiper en tout temps gratuitement !</p>
+                    <p>Toutefois, si vous voulez un équipement de haut niveau, il faudra vous le procurer par vous même en le construisant ou en l'achetant.</p>
+                    <p>Vous pouvez également marchander des ressources et équipements directement avec d'autres raiders.</p>
+                </div>
+
+                <div>
+                    <img  class="blocImage" src="images/EnlistingPresentation.jpg" alt="Un bondisseur attaquant une personne">
+                </div>                
+            </section> 
+
+            <form action="./cettePageNexistePas" method="POST">...</form>    
+                <div>
+
+                    <!--Entrée du nom-->
+                    <label for="Nom">Nom :</label>
+                    <input type="text" id="nom_id" required>
+                    <br>
+
+                    <!--Entrée du prénome-->
+                    <label for="prénom">Prénom : </label>
+                    <input type="text" id="prenom_id" required>
+                    <br>
+
+                    <!--Entrée de la rue et numero-->
+                    <label for="rue-numero">Rue et numero : </label>
+                    <input type="text" id="rue-numero_id" required>
+                    <br>
+
+                    <!--Entrée du nom du secteur-->
+                    <label for="secteur">Secteur : </label>
+                    <input type="text" id="secteur_id" required>
+                    <br>
+
+                    <!--Entrée du nom du code de secteur-->
+                    <label for="code_secteur">Code de secteur (NPA) : </label>
+                    <input type="text" id="code_secteur_id" required>
+                    <br>
+                </div>
+
+                <fieldset><!--La commande en elle même (biens et payement)-->
+                    <legend><h2>Sondage</h2></legend>
+
+                    <div><!--Choix d'options-->                        
+                        <label><strong>Si vous réussissiez votre entrainement et deveniez un raider, voudriez vous;</strong></label>                        
+                        </div>                        
+                        <input type="checkbox" id="tactical">
+                        <span>Apporter un maximum de soins sur le champ de bataille et ramener un maximum de raiders aux points d'extraction.</span>
+                        <br>
+                        <input type="checkbox" id="looting">
+                        <span>Éviter les combats et prendre tout ce que votre sac peut supporter.</span>
+                        <br>
+                        <input type="checkbox" id="combat">
+                        <span>Combattre les arcs et récupérer leurs matériaux avancés.</span>
+                        <br>
+                        <p>(Vous pouvez choisir plusieurs réponses même si elles sont contradictoires)</p>
+                    </div>
+                    <br>                                                    
+                </fieldset>  
+                <br>
+
+                <div><!--Entrée de texte facultatif-->
+                    <label for="text-ID"> <strong>Requête spéciale (facultatif)</strong> </label><br>
+                    <textarea rows="3" name="text" id="text-ID">Écrire votre message ici</textarea>
+                </div>
+                <div>
+                    <!--Coche des conditions générales-->
+                    <label for="Conditions-ID">J'accepte les conditions générales : </label>
+                    <input type="checkbox" name="conditions" id="conditions-ID" required>
+                </div>
+                <br>
+
+                <div>
+                    <!--Bouton envoyer-->
+                    <label for="Submit-ID"></label>
+                    <input type="submit" name="submit" id="submit.ID" required>
+
+                </div>      
+            </form>
 
         </main>
-        <footer><!--descriptif très bref du département et quelques liens -->
-            <hr id="FooterLimitLine">
+        <footer><!--descriptif très bref du département et quelques liens -->    
+            <div class="FooterLimit">
+                <hr id="FooterLimitLine">
+            </div>                
+
             <div>
                 <div class="footerContent">
-                    <h3>Sécurité</h3>
-                    <p>Notre objectif ?</p>
-                    <p>Votre sécurité.</p>                                        
+                    <h3>&copy; Département de sécurité</h3>
+                    <p>Notre objectif ? Votre sécurité.</p>                                                         
                 </div>      
             </div>
 
             <div class="footerLinks">
-                <div class="footerCodexLink">
-                    <a href="codex.html">Codex :</a>
-                    <ol>
-                        <li>Bondisseur</li>
-                        <li>Bombardier</li>
-                        <li>déchiqueteur</li>
-                        <li>Autres...</li>
-                    </ol>
+                <div id="footerCodexLink">
+                    <a class="FooterLinks" href="codex.html">Codex :</a>                   
+                    <ul class="whiteFooterLinks">
+                        <li>
+                            <a href="codex.html">Bondisseur</a>
+                        </li>
+                        <li>
+                            <a href="codex.html">Bombardier</a>
+                        </li>
+                        <li>
+                            <a href="codex.html">Déchiqueteurs</a>
+                        </li>
+                        <li>
+                            <a href="codex.html">Autres...</a>
+                        </li>
+                    </ul>
                 </div>
+                
                 <div class="footerSupport">
-                    <h4>Support</h4>                                        
-                    <a class="underlinedLinks" href="contact.html">Contact</a>                        
-                    <a class="underlinedLinks" href="support.html">Support</a>                       
-                    <a class="underlinedLinks" href="mentions-legales.html">Mentions légales</a>                                                                                 
-                </div>   
+                    <h4>Support</h4> 
+                    <div>
+                        <a class="FooterLinks" href="Auteur.html">Auteur</a> 
+                    </div>
+                    <div>
+                        <a class="FooterLinks" href="support.html">Support</a> 
+                    </div>
+                    <div>
+                        <a class="FooterLinks" href="mentions-legales.html">Mentions légales</a>  
+                    </div>                                                                      
+                </div>  
             </div>
-
         </footer>
     </body>
 </html>
