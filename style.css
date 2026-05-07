@@ -74,7 +74,8 @@ ol {
     width:20em;
 }
 
-nav {    
+nav {
+    height: 4em;    
     z-index: 1;
 
     display: flex;    
@@ -121,7 +122,7 @@ nav {
 #indexTitle {
     background-image: url('images/plan-ville2.jpeg');
     
-    padding: 7em 1em ;
+    padding: 9em 1em ;
 }
 
 #codexTitle {
@@ -129,6 +130,28 @@ nav {
 
     padding: 14em 2em ;    
 }
+
+#AuthorTitle {
+    background-image: url('images/firefly.jpg');
+
+    padding: 10em 2em ;    
+}
+
+#AuthorTitle h1 {
+    border-radius: 0.35em;
+    padding: 1px 20px;
+    background-color: #44444e9b;
+    margin: 0px;
+    margin-bottom: 13px;
+}
+
+#AuthorTitle p {
+    border-radius: 0.35em;
+    padding: 8px 10px;
+    background-color: #44444e9b;
+    margin: 10px;
+}
+
 
 #EnlistTitle {
     background-image: url('images/EnlistTitleImage.webp');
@@ -178,7 +201,7 @@ footer {
     color: #D3DAD9;
 }
 
-.FooterLimit {
+.TransversalLine {
     width: 100%;
 
 }
@@ -187,7 +210,7 @@ footer {
     padding-bottom: 1em;
 }
 
- #FooterLimitLine {
+ #TransversalLine {
     border: none; 
     height: 1px; 
     background-color: #A48686; 
@@ -277,7 +300,117 @@ img {
     color: #ffffff;
 }
 
-form {
+#containsForm {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 3em;
+}
 
+#name-adress label {
+    margin: 0.4em 1em;
+    padding: 0.5em 1em;
+}
+
+#name-adress input {
+    margin: 0.4em 2em;
+    padding: 0.5em;
+    border-radius: 0.8em;
+}
+
+.text-entry {
+    display: flex;    
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#formBottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.formBottom {    
+    padding: 0.2em 0em;
+}
+
+#text_id {    
+    height: 10em;
+    width: 50em;
+    background-color: #44444E;
+    color: #BFC6C4;
+    border-width: 3px;
+    border-color: #BFC6C4;
+    border-radius: 1em;
+}
+
+.formBottom input{
+    padding: 0.5em 2em;
+    border-radius: 0.8em;
+    background-color: #A48686;
+    color: #BFC6C4;
+    border-color: #D3DAD9;
+    border-width: 0.1em;
+    background-color: #d3dad946;    
+}
+
+#survey {
+    width: 42em;
+}
+
+@media (max-width: 760px) {
+    #name-adress label {
+        margin: 0.4em 1em;
+        padding: 0.5em 1em;
+    }
+
+    #name-adress input {
+        margin: 0.4em 1em;
+        padding: 0.4em;
+        border-radius: 0.8em;
+    }
+
+    .text-entry {
+        display: flex;    
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: collumn;
+    
+    }
+
+    #formBottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    }
+
+    .formBottom {    
+        padding: 0.2em 0em;
+    }
+
+    #text_id {    
+        height: 10em;
+        width: 34em;
+    }
+
+    .formBottom input{
+        padding: 0.5em 2em;   
+    }
+
+    #survey {
+        width: 28em;
+    }
+}
+
+.fakeHeaderCollider {
+    height: 4em;
+}
+
+#hobbiesPresentation {
+    flex-direction: collumn;         
+}
+
+#hobbyImages {
+    flex-direction: row;    
 }

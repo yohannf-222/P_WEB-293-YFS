@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="style.css">
-        <title>Fiche d'engagement</title>
+        <title>Fiche d'enrôlement</title>
     </head>
     <body>
          <header>
@@ -18,22 +18,20 @@
                     </div>
                     <div>
                         <a class="navLink" href="codex.html">Codex</a>
-                    </div>
-                    <div>
-                        <a class="navLink" href="Auteur.html">Auteur</a>
-                    </div>
+                    </div>                  
                 </div>
             </nav>
         </header>        
         
         <main>
+            <div class="fakeHeaderCollider"></div>
             </div> 
                 <div id="EnlistTitle" class="title"><!--Le titre principal de l'enciclopédie-->
                 <h1>Cessez de rêver</h1>
                 <h2>Devenez un raider.</h2>                
             </div>
 
-            <section><!---->
+            <section><!--Publicité pour les raiders-->
                 <div>
                     <img class="blocImage" src="images/EnlistingPresentation2.jpg" alt="">
                 </div>
@@ -47,7 +45,7 @@
                 </div>
             </section>
 
-            <section><!--Description et conseils, Bondisseur-->
+            <section><!--Présentation du formulaire-->
                 <div class="content">
                     <h2>Le Formulaire</h2>
                     <p>Le formulaire qui suit sera directement envoyé à une équipe du département de la Sécurité.</p>
@@ -62,80 +60,92 @@
                 </div>                
             </section> 
 
-            <form action="./cettePageNexistePas" method="POST">...</form>    
+            <div id="containsForm">
                 <div>
-
-                    <!--Entrée du nom-->
-                    <label for="Nom">Nom :</label>
-                    <input type="text" id="nom_id" required>
-                    <br>
-
-                    <!--Entrée du prénome-->
-                    <label for="prénom">Prénom : </label>
-                    <input type="text" id="prenom_id" required>
-                    <br>
-
-                    <!--Entrée de la rue et numero-->
-                    <label for="rue-numero">Rue et numero : </label>
-                    <input type="text" id="rue-numero_id" required>
-                    <br>
-
-                    <!--Entrée du nom du secteur-->
-                    <label for="secteur">Secteur : </label>
-                    <input type="text" id="secteur_id" required>
-                    <br>
-
-                    <!--Entrée du nom du code de secteur-->
-                    <label for="code_secteur">Code de secteur (NPA) : </label>
-                    <input type="text" id="code_secteur_id" required>
-                    <br>
+                    <div class="TransversalLine">
+                    <hr id="TransversalLine">
                 </div>
-
-                <fieldset><!--La commande en elle même (biens et payement)-->
-                    <legend><h2>Sondage</h2></legend>
-
-                    <div><!--Choix d'options-->                        
-                        <label><strong>Si vous réussissiez votre entrainement et deveniez un raider, voudriez vous;</strong></label>                        
+                </div>
+                <div class="TransversalLine">
+                    <hr id="TransversalLine">
+                </div>
+                <form action="./cettePageNexistePas" method="POST"><h2>Formulaire d'inscription</h2></form>    
+                    <div id="name-adress">
+                        <div class="text-entry">
+                            <!--Entrée du nom-->
+                            <label for="Nom">Nom :</label>
+                            <input type="text" id="nom_id" required placeholder="Ferrari">
                         </div>                        
-                        <input type="checkbox" id="tactical">
-                        <span>Apporter un maximum de soins sur le champ de bataille et ramener un maximum de raiders aux points d'extraction.</span>
-                        <br>
-                        <input type="checkbox" id="looting">
-                        <span>Éviter les combats et prendre tout ce que votre sac peut supporter.</span>
-                        <br>
-                        <input type="checkbox" id="combat">
-                        <span>Combattre les arcs et récupérer leurs matériaux avancés.</span>
-                        <br>
-                        <p>(Vous pouvez choisir plusieurs réponses même si elles sont contradictoires)</p>
+                        <div class="text-entry">
+                            <!--Entrée du prénome-->
+                            <label for="prénom">Prénom : </label>
+                            <input type="text" id="prenom_id" required placeholder="Antonio">
+                        </div>
+                        <div class="text-entry">
+                            <!--Entrée de la rue et numero-->
+                            <label for="rue-numero">Allée et numero : </label>
+                            <input type="text" id="rue-numero_id" required placeholder="Corridoio della regina 32">
+                        </div>
+                        <div class="text-entry">
+                             <!--Entrée du nom du secteur-->
+                            <label for="secteur">Secteur : </label>
+                            <input type="text" id="secteur_id" required placeholder="Chiesa rossa">
+                        </div>
+                       
+                        <div class="text-entry">
+                            <!--Entrée du nom du code de secteur-->
+                            <label for="code_secteur">Code de secteur (NPA) : </label>
+                            <input type="text" id="code_secteur_id" required placeholder="1023">
+                        </div>                        
                     </div>
-                    <br>                                                    
-                </fieldset>  
-                <br>
 
-                <div><!--Entrée de texte facultatif-->
-                    <label for="text-ID"> <strong>Requête spéciale (facultatif)</strong> </label><br>
-                    <textarea rows="3" name="text" id="text-ID">Écrire votre message ici</textarea>
-                </div>
-                <div>
-                    <!--Coche des conditions générales-->
-                    <label for="Conditions-ID">J'accepte les conditions générales : </label>
-                    <input type="checkbox" name="conditions" id="conditions-ID" required>
-                </div>
-                <br>
+                    <fieldset id="survey"><!--La commande en elle même (biens et payement)-->
+                        <legend><h2>Sondage</h2></legend>
 
-                <div>
-                    <!--Bouton envoyer-->
-                    <label for="Submit-ID"></label>
-                    <input type="submit" name="submit" id="submit.ID" required>
+                        <div><!--Choix d'options-->                        
+                            <label><strong>Si vous réussissiez votre entrainement et deveniez un raider, voudriez vous;</strong></label>                        
+                            </div>                        
+                            <input type="checkbox" id="tactical">
+                            <span>Apporter un maximum de soins sur le champ de bataille et ramener un maximum de raiders aux points d'extraction.</span>
+                            <br>
+                            <input type="checkbox" id="looting">
+                            <span>Éviter les combats et prendre tout ce que votre sac peut supporter.</span>
+                            <br>
+                            <input type="checkbox" id="combat">
+                            <span>Combattre les arcs et récupérer leurs matériaux avancés.</span>
+                            <br>
+                            <p>(Vous pouvez choisir plusieurs réponses même si elles sont contradictoires)</p>
+                        </div>
+                        <br>                                                    
+                    </fieldset>  
 
-                </div>      
-            </form>
+                    <div id="formBottom">
+                        <!--Entrée de texte facultatif-->
+                        <div class="formBottom">
+                            <label for="text-ID"> <strong>Requête supplémentaire (facultatif)</strong> </label>
+                        </div>                            
+                        <div class="formBottom">
+                            <textarea rows="3" name="text" id="text_id" placeholder="Veuillez écrire votre requête ici."></textarea>
+                        </div>                                                    
+                        <div class="formBottom">
+                            <!--Coche des conditions générales-->
+                            <label for="Conditions-ID">J'accepte les conditions générales : </label>
+                            <input type="checkbox" name="conditions" id="conditions_id" required>
+                        </div>
+                        <div class="formBottom">
+                            <!--Bouton envoyer-->
+                            <label for="Submit-ID"></label>
+                            <input type="submit" name="submit" id="submit_id" required>
+                        </div> 
+                    </div>     
 
+                </form>
+            </div>
         </main>
         <footer><!--descriptif très bref du département et quelques liens -->    
-            <div class="FooterLimit">
-                <hr id="FooterLimitLine">
-            </div>                
+            <div class="TransversalLine">
+                <hr id="TransversalLine">
+            </div>
 
             <div>
                 <div class="footerContent">
@@ -166,7 +176,7 @@
                 <div class="footerSupport">
                     <h4>Support</h4> 
                     <div>
-                        <a class="FooterLinks" href="Auteur.html">Auteur</a> 
+                        <a class="FooterLinks" href="auteur.html">Auteur</a> 
                     </div>
                     <div>
                         <a class="FooterLinks" href="support.html">Support</a> 
