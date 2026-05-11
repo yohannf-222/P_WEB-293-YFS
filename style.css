@@ -132,9 +132,10 @@ nav {
 }
 
 #AuthorTitle {
-    background-image: url('images/firefly.jpg');
+    background-image: url('images/aseprite2.png');
+    opacity: 80%;
 
-    padding: 10em 2em ;    
+    padding: 16em 2em ;    
 }
 
 #AuthorTitle h1 {
@@ -143,13 +144,6 @@ nav {
     background-color: #44444e9b;
     margin: 0px;
     margin-bottom: 13px;
-}
-
-#AuthorTitle p {
-    border-radius: 0.35em;
-    padding: 8px 10px;
-    background-color: #44444e9b;
-    margin: 10px;
 }
 
 
@@ -408,9 +402,23 @@ img {
 }
 
 #hobbiesPresentation {
-    flex-direction: collumn;         
+    display: flex;
+    flex-direction: collumn;
+    align-items: center;
 }
 
 #hobbyImages {
+    display: flex;
     flex-direction: row;    
+    justify-content: space-between;
+}
+
+.hobbyImages {
+    display: flex;
+    justify-content: space-between;
+    align-items: row;
+    width: 30em;
+    padding: 1em;
+    border-radius: 5em;
+
 }
