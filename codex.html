@@ -8,8 +8,9 @@
     </head>
     <body>
         <header>
+
             <nav><!--Contient le logo SPERANZA sous forme de texte majuscule et les liens "Auteur" et "Codex"-->
-                <div>
+                <div id="logo">
                     <h2>SPERANZA</h2>
                 </div>
                 <div class="topLinks">
@@ -17,10 +18,13 @@
                         <a class="navLink" href="index.html">Accueil</a>
                     </div>
                     <div>
+                        <a class="navLink" href="codex.html">Codex</a>
+                    </div>
+                    <div>
                         <a class="navLink" href="enlist.html">S'enrôler</a>
-                    </div>                  
+                    </div>                 
                 </div>
-            </nav>
+            </nav>            
         </header>
         <main>              
             <div class="fakeHeaderCollider"></div>
@@ -31,7 +35,7 @@
                 <p>Les plus grands (et les plus petits) dangers de la surface.</p>
             </div>
 
-            <section><!--Description et conseils, Bondisseur-->
+            <section id="bondisseur"><!--Description et conseils, Bondisseur-->
                 <div class="content">
                     <h2>Les Bondisseurs</h2>
                     <p>Ces grandes machines quadripèdes sont fréquemment rencontrés par les raiders.</p>
@@ -45,7 +49,7 @@
                 </div>                
             </section> 
 
-            <section><!--Description et conseils, Bombardier-->
+            <section id="bombardier"><!--Description et conseils, Bombardier-->
                 <div>
                     <img class="blocImage" src="images/Bombardier.webp" alt="Un Bombardier en position de combat dans un étang">
                 </div>
@@ -59,9 +63,9 @@
                 </div>        
             </section>
 
-            <section><!--Description et conseils, Frelon-->
+            <section id="frelon"><!--Description et conseils, Frelon-->
                 <div class="content">
-                    <h2>Les Guèpes</h2>
+                    <h2>Les Frelons</h2>
                     <p>Ces drones sont parmi les ennemis que vous croiserez le plus souvent durant vos expéditions</p>                 
                     <p>Ils vous viseront avec leur pointeur laser et après un bref instant, vous tirerons dessus avec un pistolet à impulsion.</p>
                     <p>notez que leurs fléchettes sont faciles à éviter et que leurs moteurs arrières ne sont pas blindés</p>
@@ -72,7 +76,7 @@
                 </div>                
             </section> 
 
-            <section><!--Description et conseils, Guèpe-->
+            <section id="guèpe"><!--Description et conseils, Guèpe-->
                 <div>
                     <img class="blocImage" src="images/wasps.png" alt="Deux guèpes en repérage dans le ciel">
                 </div>
@@ -92,7 +96,6 @@
                     <p>Toutefois, ce drone blindé doit sortir sa bombonne de napalm en dessous de son centre de gravité pour pouvoir tirer,</p>
                     <p>Ceci vous donne la chance de la faire exploser avant de subir des dommages graves.</p>
                 </div>
-
                 <div>
                     <img  class="blocImage" src="images/firefly.jpg" alt="Deux Lucioles en position de combat, dont une tirant une trainée de flammes">
                 </div>                
@@ -101,8 +104,7 @@
             <section><!--Description et conseils, les Pop-->
                 <div>
                     <img class="blocImage" src="images/pop.webp" alt="Une boule Pop dans un hangar proche du port spacial.">
-                </div>
-                        
+                </div>                        
                 <div class="content">
                     <h2>Les Pops</h2>
                     <p>De nouveau, un ennemi très commun, mais pas moins terrifiant les plus grands robots.</p>
@@ -137,9 +139,7 @@
                 </div>                   
             </section>
 
-             </section>
-
-              <section><!--Description et conseils, Déchiqueteurs-->
+            <section><!--Description et conseils, Déchiqueteurs-->
                 <div class="content">
                     <h2>Les Déchiqueteurs</h2>
                     <p>Ces ennemis arc vous foncera dessus à la première vue et causera une explosion qui contrairement aux bondisseurs, n'est pas une singularité. </p>
@@ -147,7 +147,6 @@
                     <p>flottent grâce à 3 petits réacteurs situés en bas de leur tronc central, ces derniers sont leur seul point faible.</p>
                     <p>Vous aurez besoin d'une arme avec une bonne pénétration de blindage pour leur faire des dégats.</p>
                 </div>
-
                 <div>
                     <img  class="blocImage" src="images/Shredder.png" alt="Un Déchiqueteur flottant aux alentours du champ de bataille du barrage">
                 </div>                
@@ -171,16 +170,19 @@
                     <a class="FooterLinks" href="codex.html">Codex :</a>                   
                     <ul class="whiteFooterLinks">
                         <li>
-                            <a href="codex.html">Bondisseur</a>
+                            <a href="codex.html#bondisseur">Bondisseur</a>
                         </li>
                         <li>
-                            <a href="codex.html">Bombardier</a>
+                            <a href="codex.html#bombardier">Bombardier</a>
                         </li>
                         <li>
-                            <a href="codex.html">Déchiqueteurs</a>
+                            <a href="codex.html#frelon">Frelon</a>
                         </li>
                         <li>
-                            <a href="codex.html">Autres...</a>
+                            <a href="codex.html#guèpe">Guèpes</a>
+                        </li>
+                        <li>
+                           <a href="codex.html">Autres...</a>
                         </li>
                     </ul>
                 </div>
@@ -189,16 +191,9 @@
                     <h4>Support</h4> 
                     <div>
                         <a class="FooterLinks" href="auteur.html">Auteur</a> 
-                    </div>
-                    <div>
-                        <a class="FooterLinks" href="support.html">Support</a> 
-                    </div>
-                    <div>
-                        <a class="FooterLinks" href="mentions-legales.html">Mentions légales</a>  
-                    </div>                                                                      
+                    </div>                                                              
                 </div>  
             </div>
         </footer>
-
     </body>
 </html>
