@@ -1,6 +1,7 @@
 *{
     font-family: Helvetica, "Roboto", sans-serif;
     flex-wrap: wrap;
+    color: #d3dad9d1; 
 }
 
 :root {
@@ -420,5 +421,4 @@ img {
     width: 30em;
     padding: 1em;
     border-radius: 5em;
-
 }
